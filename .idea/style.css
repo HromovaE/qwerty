@@ -1,0 +1,183 @@
+/*вся страница */
+html,body {
+    background-image:url("coffee.jpg");
+    height:100%;
+}
+.allcontent {
+    width:70%;
+    min-height:100%;
+    margin:0 auto;
+    background: aliceblue;
+}
+.fleft {
+    float:left;
+}
+.fright {
+    float:right;
+}
+
+/* хедер*/
+img {
+    width:150px;
+    margin:0 10px;
+}
+.content img {
+    border: 1px solid black;
+}
+.menu {
+    padding-top:50px;
+    margin-left:5%;
+}
+.login {
+    padding-top:45px;
+    margin-left:5%;
+}
+
+.table {
+    display:table;
+}
+.tr {
+    display:table-row;
+}
+.td {
+    display:table-cell;
+    padding-right:15px;
+}
+
+
+/* стили горизонтального меню */
+
+.main-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: 1px solid #e5e5e5;
+}
+
+.main-menu > li {
+    position: relative;
+    display: inline-block;
+    margin-right: -4px;
+}
+
+.main-menu a {
+    display: block;
+    margin-left: -1px;
+    padding: 8px 10px;
+    color: #0088cc;
+
+    border-left: 1px solid #a6a8e5;
+}
+
+.main-menu a:hover {
+    background: #f5f5f5;
+}
+
+.main-menu .sub-menu {
+    display:none;
+    position: absolute;
+    left: 1px;
+    width: 150px;
+    z-index:10;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: #fcf8e3;
+}
+
+.main-menu .sub-menu a {
+    margin-bottom: -1px;
+    border: 1px solid #e5e5e5;
+}
+
+.main-menu > li:hover .sub-menu {
+    display:block;
+}
+
+/* side меню*/
+
+.side-menu {
+    /*width: 180px;*/
+    margin: 0;
+    padding: 10px 0;
+    list-style: none;
+}
+
+.side-menu a {
+    display: block;
+    margin-bottom: -1px;
+    padding: 8px 14px;
+    text-decoration: none;
+    color: #ffffff;
+    border: 1px solid #e5e5e5;
+    background:#2980b9;
+}
+
+.side-menu a:hover {
+    background: lightblue;
+}
+
+.side-menu > li {
+    position: relative;
+}
+
+.side-menu .sub-menu {
+    display:none;
+    position: absolute;
+    top: 0px;
+    left: 150px;
+    z-index: 10;
+    width: 180px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: #fcf8e3;
+}
+
+.side-menu > li:hover .sub-menu {
+    display:block;
+}
+.side-menu li li a {
+    background:lightblue;
+    text-decoration:underline;
+    color:darkblue;
+}
+.side-menu li li a:hover {
+    background:cornflowerblue;
+}
+
+/* content*/
+.content {
+    background:white;
+}
+.sidebar {
+    width:15;
+}
+
+.main span{
+   text-decoration: underline;
+    font-size: larger;
+
+}
+
+.main {
+    width:75%;
+    padding:10px 15px;
+    margin-bottom:25px;
+}
+/* низ */
+.clearfix::after {
+    content:"";
+    clear:both;
+    display:table;
+    width:100%;
+}
+.footer {
+    position: fixed;
+    left: 15%; bottom: 0;
+    width: 70%;
+    background-color:#34495e;
+    text-align:center;
+    height:20px;
+    color:white;
+}

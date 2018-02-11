@@ -94,7 +94,48 @@ img {
     display:block;
 }
 
-/* side меню*/
+/* sidebar*/
+
+.settings>input{     /* все input дочерние класса settings */
+    font-size: small;
+    margin-right: 3px;
+    margin-top: 10px;
+    width: 96%;
+    }
+
+
+.settings {
+    width: 96%;
+    padding-left: 4px;
+
+}
+table {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-collapse: collapse;
+    border: 1px solid;
+}
+
+caption {
+    color: saddlebrown;
+}
+tr {
+    margin-top: 10px;
+}
+
+td {
+    padding-left: 8px;
+
+}
+
+.settings .deleteP { /* все объекты класса deleteP находятся внутри класса settings, приоритет выше чем у .settings>input */
+ width: 85px;
+    padding: 0px;
+    text-align: center;
+
+
+}
 
 .side-menu {
     /*width: 180px;*/
@@ -149,9 +190,10 @@ img {
 /* content*/
 .content {
     background:white;
+    margin: 0 0;
 }
 .sidebar {
-    width:15;
+    width:20%;
 }
 
 .main span{
@@ -161,9 +203,9 @@ img {
 }
 
 .main {
-    width:75%;
-    padding:10px 15px;
-    margin-bottom:25px;
+    width:77%;
+    padding:10px 14px;
+    margin: 0 0 20px 0;
 }
 /* низ */
 .clearfix::after {

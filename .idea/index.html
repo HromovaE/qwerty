@@ -48,7 +48,7 @@
     </div>
 
     <div class="content clearfix">
-        <div class="fleft sidebar">
+        <div class="fleft sidebar" id="sidebar">
             <ul class="side-menu">
                 <li>
                     <a href="#about">O кофе</a>
@@ -83,8 +83,31 @@
                     </ul>
                 </li>
             </ul>
+
+            <div class="settings">
+                <input type="text" name="bgcolor" value="" id="bgcolor" placeholder="Укажите код/название цвета" onchange="changeBgColor()">
+
+            <table>
+                <caption>Возможные варианты шрифта текста</caption>
+                <tr><td><input type="radio" name="fontFamily" value="Arial" onchange="changeFontFamily(this)"> Arial</td>
+                </tr>
+                <tr><td><input type="radio" name="fontFamily" value="Calibri" onchange="changeFontFamily(this)">Calibri</td>
+                </tr>
+                <tr><td><input type="radio" name="fontFamily" value="Georgia" onchange="changeFontFamily(this)">Georgia</td>
+                </tr>
+                <tr><td><input type="radio" name="fontFamily" value="Comic Sans MS" onchange="changeFontFamily(this)">Comic Sans MS</td>
+                </tr>
+                <tr><td><input type="radio" name="fontFamily" value="Times New Roman" checked onchange="changeFontFamily(this)">Times New Roman</td>
+                </tr>
+            </table>
+                <input type="text" name="fontSize" value="" placeholder="Укажите размер шрифта" onchange="changeFontSize(this)">
+                <input class="deleteP" type="button" name="deleteLastP" value="Удалить <P>" onclick="deleteLastP()">
+            </div>
+
+
         </div>
         <div class="fleft main">
+            <input id="burger" type="button" name="hideSidebar" value="<< hide" onclick="hideSidebar()">
             <h1>Все о кофе</h1>
             <p><strong>Кофе</strong>... Как много в этом слове близкого и родного многим людям в различных странах и городах.</p>
             <img class="fright" src="coffee1.jpg" alt="люблю кофе">
@@ -110,5 +133,6 @@
 <div class="footer">
     Copyright &copy 2018
 </div>
+<script src="script.js"></script>
 </body>
 </html>

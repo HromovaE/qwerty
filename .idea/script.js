@@ -1,4 +1,5 @@
 'use strict'
+
 function changeBgColor() {
     var input=document.getElementById('bgcolor');
     document.body.getElementsByClassName('main')[0].style.backgroundColor=input.value;
@@ -12,10 +13,25 @@ function changeFontFamily(font) {
 }
 
 function changeFontSize(size) {
-    if (isNaN(size.value)) {
+    if (isNaN(size.value)) {   //isNaN-не число
         alert('Введите пожалуйста число от 8 до 24!');
         return;
     }
+    //  if (~str.indexOf("get")) {
+    if (~size.value.indexOf('.')) {
+        alert ('Введите пожалуйста ЦЕЛОЕ число от 8 до 24!');
+        return;
+    }
+
+    if ((size.value>=8) && (size.value<=24)) {
+        var elements=document.body.getElementsByTagName('p');
+        for (var i=0; i<elements.length; i++) {
+            elements[i].style.fontSize = size.value+'px';
+        }
+    }
+    else alert ("Диапазон возможных шрифтов от 8 до 24!");
+
+    /*
     var rounded=Math.round(size.value);
     if ((rounded>=8) && (rounded<=24)) {
         var elements=document.body.getElementsByTagName('p');
@@ -24,7 +40,11 @@ function changeFontSize(size) {
         }
     }
     else alert ("Диапазон возможных шрифтов от 8 до 24!");
+    */
 }
+
+var deleteP = document.getElementById('deleteLastP');
+deleteP.onclick = deleteLastP;
 
 function deleteLastP() {
     var elements=document.body.getElementsByTagName('p');
@@ -36,6 +56,8 @@ function deleteLastP() {
     }
 }
 
+var burger = document.getElementById('burger');
+burger.onclick = hideSidebar;
 function hideSidebar() {
     var sidebar=document.getElementById('sidebar');
     var main=document.getElementsByClassName('main')[0];

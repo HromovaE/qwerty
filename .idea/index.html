@@ -30,20 +30,43 @@
         </div>
 
         <div class="fleft login">
-            <form action="URL" method="post">
+            <div id="authorization">
                 <div class="table">
                     <div class ="tr">
-                        <div class="td"><label for="login-field">Логин: </label></div>
-                        <div class="td"><input type="text" name="login" id="login-field" size="8"> </div>
-                        <div class="td"><input type="submit" value="Войти"></div>
+                        <div class="td"><label for="auth_login">Логин: </label></div>
+                        <div class="td"><input id="auth_login" type="text" name="login" size="8"> </div>
+                        <div class="td"><input type="submit" value="Автор-я" id="auth"></div>
                     </div>
                     <div class="tr">
-                        <div class="td"><label for="password-field">Пароль: </label></div>
-                        <div class="td"><input type="password" name="password" id="password-field" size="8"></div>
-                        <div class="td"><a href="#registration">Регистрация</a></div>
+                        <div class="td"><label for="auth_password">Пароль: </label></div>
+                        <div class="td"><input type="password" name="password" id="auth_password" size="8"></div>
+                        <div class="td"><a href="#registration" id="auth_register">Регистрация</a></div>
                     </div>
                 </div>
-            </form>
+            </div>
+            <div id="registation">
+                <div class="table">
+                    <div class ="tr">
+                        <div class="td"><label for="register_login">Логин: </label></div>
+                        <div class="td"><input id="register_login" type="text" name="login" size="8"> </div>
+                        <div class="td"><input type="submit" value="Регист-я" id="register"></div>
+                    </div>
+                    <div class="tr">
+                        <div class="td"><label for="register_password">Пароль: </label></div>
+                        <div class="td"><input type="password" name="password" id="register_password" size="8"></div>
+                        <div class="td"><a href="#author" id="register_auth">Вернуться</a></div>
+                    </div>
+                    <div class="tr">
+                        <div class="td"><label for="register_confirmation">Подверди<br>пароль:</label></div>
+                        <div class="td"><input type="password" name="register_confirmation" id="register_confirmation" size="8"></div>
+                        <div class="td"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="authorized"></div>
+            <div>
+                <input type="button" value="Выйти" id="exit">
+            </div>
         </div>
     </div>
 
@@ -133,6 +156,23 @@
 <div class="footer">
     Copyright &copy 2018
 </div>
+
+<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.9.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.9.1/firebase-auth.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyChTwp9alMAvy_LWao0bOfVlUjhnucDSTM",
+        authDomain: "qwerty-f4ec8.firebaseapp.com",
+        databaseURL: "https://qwerty-f4ec8.firebaseio.com",
+        projectId: "qwerty-f4ec8",
+        storageBucket: "qwerty-f4ec8.appspot.com",
+        messagingSenderId: "719164951713"
+    };
+    firebase.initializeApp(config);
+</script>
 <script src="script.js"></script>
+<script src="coffee.js"></script>
 </body>
 </html>

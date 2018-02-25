@@ -4,7 +4,7 @@ html,body {
     height:100%;
 }
 .allcontent {
-    width:70%;
+    width:75%;
     min-height:100%;
     margin:0 auto;
     background: aliceblue;
@@ -44,6 +44,9 @@ img {
     padding-right:15px;
 }
 
+/*#registation {
+    display: none;
+}*/
 
 /* стили горизонтального меню */
 
@@ -216,8 +219,8 @@ td {
 }
 .footer {
     position: fixed;
-    left: 15%; bottom: 0;
-    width: 70%;
+    left: 12.5%; bottom: 0;
+    width: 75%;
     background-color:#34495e;
     text-align:center;
     height:20px;

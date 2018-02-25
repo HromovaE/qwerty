@@ -1,0 +1,41 @@
+[debug] [2018-02-25T18:28:36.929Z] ----------------------------------------------------------------------
+[debug] [2018-02-25T18:28:36.936Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Евгений\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-02-25T18:28:36.936Z] CLI Version:   3.17.4
+[debug] [2018-02-25T18:28:36.936Z] Platform:      win32
+[debug] [2018-02-25T18:28:36.936Z] Node Version:  v8.9.4
+[debug] [2018-02-25T18:28:36.937Z] Time:          Sun Feb 25 2018 20:28:36 GMT+0200 (Финляндия (зима))
+[debug] [2018-02-25T18:28:36.938Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-02-25T18:28:37.060Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-02-25T18:28:37.062Z] > authorizing via signed-in user
+[debug] [2018-02-25T18:28:37.068Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-02-25T18:28:37.068Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/a8e7XoATNXaTUeIMyo9198ss2LJXWtXohS-9D7QTIp7MEnrvdWmm7GFCE78NT5JP',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Sun Feb 25 2018 20:28:37 GMT+0200 (Финляндия (зима))
+[debug] [2018-02-25T18:28:37.389Z] <<< HTTP RESPONSE 200
+[debug] [2018-02-25T18:28:37.458Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/qwerty-f4ec8  
+  
+ Sun Feb 25 2018 20:28:37 GMT+0200 (Финляндия (зима))
+[debug] [2018-02-25T18:28:38.335Z] <<< HTTP RESPONSE 200
+[debug] [2018-02-25T18:28:38.336Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/qwerty-f4ec8/tokens  
+  
+ Sun Feb 25 2018 20:28:38 GMT+0200 (Финляндия (зима))
+[debug] [2018-02-25T18:28:39.128Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\Евгений\WebstormProjects\first\.idea'...
+[info] 
+[debug] [2018-02-25T18:28:39.135Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/qwerty-f4ec8  
+  
+ Sun Feb 25 2018 20:28:39 GMT+0200 (Финляндия (зима))
+[debug] [2018-02-25T18:28:40.085Z] <<< HTTP RESPONSE 200
+[debug] [2018-02-25T18:28:40.085Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/719164951713/clients/_:getWebAppConfig  
+  
+ Sun Feb 25 2018 20:28:40 GMT+0200 (Финляндия (зима))
+[debug] [2018-02-25T18:28:40.909Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: ./
+[info] +  hosting: Local server: http://localhost:5000
+

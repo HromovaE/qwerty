@@ -72,3 +72,20 @@ function hideSidebar() {
         document.getElementById('burger').value='<< hide';
     }
 }
+
+var register = document.getElementById('auth_register');
+var auth = document.getElementById('register_auth');
+
+register.onclick = showRegistration;
+
+function showRegistration() {
+    document.getElementById('authorization').setAttribute('hidden', 'true');
+    document.getElementById('registation').removeAttribute('hidden');
+}
+
+auth.onclick = showAutorization;
+
+function showAutorization() {
+    document.getElementById('registation').setAttribute('hidden', 'true');
+    document.getElementById('authorization').removeAttribute('hidden');
+}

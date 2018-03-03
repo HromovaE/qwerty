@@ -66,7 +66,7 @@ Coffee.prototype.onAuthStateChanged = function(user) {
 };
 
 Coffee.prototype.registr = function() {
-    // Sign in Firebase using popup auth and Google as the identity provider.
+    // Sign up Firebase
 
     if (this.register_password.value != this.confirm_password.value) {
         window.alert('Пароли не совпадают!');
@@ -80,7 +80,7 @@ Coffee.prototype.registr = function() {
 };
 
 Coffee.prototype.authorize = function() {
-    // Sign in Firebase using popup auth and Google as the identity provider.
+    // Sign in Firebase
     this.auth.signInWithEmailAndPassword(this.auth_login.value, this.auth_password.value).catch(function(error) {
         // Handle Errors here.
         window.alert(error.code + ":" + error.message);
@@ -90,6 +90,12 @@ Coffee.prototype.authorize = function() {
 
 Coffee.prototype.goaway = function () {
     this.auth.signOut();
+
+    this.register_login.value = "";
+    this.register_password.value = "";
+    this.auth_login.value = "";
+    this.auth_password.value = "";
+    this.confirm_password.value = "";
 }
 
 
